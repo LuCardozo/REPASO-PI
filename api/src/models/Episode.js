@@ -4,6 +4,16 @@ const { DataTypes } = require('sequelize')
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('episode', {
-
-  })
+    id:{
+      type: DataTypes.FLOAT,
+      allowNull: false,
+      primaryKey: true
+    },
+    name: {
+      type: DataTypes.STRING
+    },
+    air_date: {
+      type: DataTypes.STRING
+    }
+  },{timestamps: false})
 }
