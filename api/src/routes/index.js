@@ -13,7 +13,7 @@ router.get("/characters", async (req, res) =>{
         res.send(characters)
     } catch (error) {
         console.log(error);
-        res.status(400).send("No se pudo traer a los personajes")
+        res.status(400).json({msg: "No se pudo traer a los personajes"})
     }
 
 })
@@ -22,7 +22,7 @@ router.get("/episodes", async (req,res) =>{
         let episodes = await getEpisodes()
         res.send(episodes)
     } catch (error) {
-        res.status(400).send("No se logro cargar los episodios")
+        res.status(400).json({msg: "No se logro cargar los episodios"})
     }
 })
 
@@ -32,7 +32,7 @@ router.post("/character", async (req, res) =>{
         let chara = await postCharacter(name, origin, species, image, episodes)
         res.send(chara)
     } catch (error) {
-        res.status(400).send(error.message)
+        res.status(400).json({msg: error.message})
     }
 })
 

@@ -1,0 +1,31 @@
+.nav{
+    font-family: Rockwell;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0%;
+    margin: 20px;
+    width: 90%;
+    height: 200px;
+}
+.container{
+    font-family: Rockwell;
+    display: flex;
+    justify-content: center;
+}
+.creator{
+    font-family: Rockwell;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

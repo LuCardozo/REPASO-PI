@@ -1,0 +1,31 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size:xx-large;
+    font-family: Rockwell;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    color: rgb(236, 79, 236);
+    font-family: Rockwell;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: blueviolet;
+    border-color: darkmagenta;
+}
+body{
+    background-image: 
+    url("https://wallpapermoon.com/wp-content/uploads/2022/06/01740190.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}   

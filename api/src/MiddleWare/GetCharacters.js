@@ -13,6 +13,7 @@ const getApi = async () =>{
         return {
             image: c.image,
             name: c.name,
+            id: c.id,
             origin: c.origin.name,
             species: c.species,
             episodes: c.episode,
